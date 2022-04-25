@@ -14,10 +14,10 @@ body{
 
 .contenedor{
     width: 90%;
-    max-width: 1200px;
+    max-width: 1400px;
     overflow: hidden;
     margin: auto;
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 header{
@@ -30,6 +30,7 @@ header{
 }
 
 .head{
+    text-align: center;
     padding: 0;
     height: 100%;
     display: flex;
@@ -55,7 +56,7 @@ header{
     position: fixed;
     top: 0;
     right: 0;
-    width: 20vw;
+    width: 30vw;
     height: 100%;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
@@ -77,7 +78,7 @@ header{
 }
 
 .titulo{
-    font-size: 60px;
+    font-size: 65px;
     margin-bottom: 15px;
 }
 
@@ -93,6 +94,13 @@ header{
     color: #9f8ad0;
     margin-bottom: 40px;
     font-size: 40px;
+}
+
+.nosotros-img{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .contenedor-servicio{
@@ -144,6 +152,7 @@ header{
 }
 
 .img-galeria{
+    object-fit: cover;
     width: 30%;
     display: block;
     margin-bottom: 15px;
@@ -161,7 +170,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(100%);
+    transform: translate(110%);
     transition: transform .2s ease-in-out;
 }
 
@@ -170,6 +179,7 @@ header{
 }
 
 .agregar-imagen{
+    object-fit: cover;
     width: 60%;
     border-radius: 10px;
     transform: scale(0);
@@ -247,97 +257,127 @@ footer{
 
 .line{
     width: 90%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     height: 2px;
     background: #fff;
     margin-bottom: 60px;
 }
 
-/*.contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 250px;
-    width: 100%;
-    background-color: #343a40;
-    color: white;
+/* MEDIA QUERIES */
+@media screen and (max-width: 1000px){
+    .menu-navegacion{
+        width: 40vw;
+    }
+
+    .titulo{
+        font-size: 55px;
+    }
 }
 
-.datos-sitio {
-    width: 33.33%;
-    text-align: center;
+@media screen and (max-width: 800px) {
+    .menu-navegacion{
+        width: 50vw;
+    }
+
+    .titulo{
+        font-size: 40px;
+    }
+
+    .nosotros-img{
+        width: 70%;
+    }
+
+    .contenedor-servicio img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .checklist-servicio{
+        width: 80%;
+    }
+
+    .service{
+        margin-bottom: 30px;
+    }
+
+    .agregar-imagen{
+        width: 80%;
+
+    }
+
+    .img-galeria{
+        width: 45%;
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+    .social-media i{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
 }
 
-.datos-sitio img {
-    padding: 20px;
-    border-radius: 50%;
-}
+@media screen and (max-width: 500px){
+    .menu-navegacion{
+        width: 65vw;
+    }
 
-.mapa {
-    width: 33.33%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
+    .hamburguer{
+        top: 20px;
+        right: 20px;
+    }
 
-.mapa p {
-    padding: 5px;
-    text-align: left;
-}
+    .nosotros-img{
+        width: 90%;
+    }
 
-.mapa iframe {
-    width: 75%;
-    height: 200px;
-    padding-bottom: 10px;
-}
+    .titulo{
+        font-size: 30px;
+    }
 
-.redes {
-    width: 33.33%;
-}
+    .subtitulo{
+        font-size: 30px;
+    }
 
-.redes p {
-    padding: 10px;
-}
+    .img-galeria{
+        width: 95%;
+    }
 
-.redes-iconos {
-    display: flex;
-    justify-content: space-around;
-}
-*/
-/* REDES SOCIALES*/
-/*.facebook {
-    width: 36px;
-    height: 36px;
-    border-radius: 20%;
-    color: #fff;
-    background: #3b5998;
-}
+    .agregar-imagen{
+        width: 95%;
+    }
 
-.twitter {
-    width: 36px;
-    height: 36px;
-    border-radius: 20%;
-    color: #fff;
-    background: #00acee;
+    .social-media{
+        width: 100%;
+    }
+
+    .contact-us{
+        width: 90%;
+    }
+
+    .contenedor-servicio img{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .checklist-servicio{
+        width: 90%;
+    }
 }
-
-.instagram {
-    width: 36px;
-    height: 36px;
-    border-radius: 20%;
-    border-radius: 40px;
-    color: #fff;
-    line-height: 30px;
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%,
-            #fdf497 0%,
-            #fdf497 5%,
-            #fd5949 45%,
-            #d6249f 60%,
-            #285aeb 90%);
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
-}*/
-
-/*footer*/
