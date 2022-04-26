@@ -4,13 +4,13 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif!important;
 }
 
-/*
+
 :root{
     scroll-behavior: smooth;
-}*/
+}
 
 .contenedor{
     width: 90%;
@@ -54,6 +54,7 @@ header{
 
 .menu-navegacion{
     position: fixed;
+    z-index: 10;
     top: 0;
     right: 0;
     width: 30vw;
@@ -74,26 +75,26 @@ header{
 
 .menu-navegacion a{
     color: #fff;
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
 .titulo{
-    font-size: 65px;
+    font-size: 65px!important;
     margin-bottom: 15px;
 }
 
 .copy{
-    font-weight: 300;
+    font-weight: 300!important;
     font-size: 25px;
 }
 
 /*Nuestro Servicio*/
 .subtitulo{
     text-align: center;
-    font-weight: 300;
+    font-weight: 300!important;
     color: #9f8ad0;
     margin-bottom: 40px;
-    font-size: 40px;
+    font-size: 40px!important;
 }
 
 .nosotros-img{
@@ -135,7 +136,7 @@ header{
     color: #fff;
     text-align: center;
     border-radius: 50%;
-    font-weight: 700;
+    font-weight: 700!important;
     line-height: 30px;
     margin-right: 5px;
 }
@@ -198,6 +199,40 @@ header{
     cursor: pointer;
 }
 
+/* mapa y formulario */
+.contenedor-mapa{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-mapa iframe{
+    width: 95%;
+    height: 455px;
+    padding: 10px;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    margin-bottom: 0.25rem;
+    padding: 0.5rem
+}
+
+.contenedor-formulario{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.espacio-form{
+    padding: 10px;
+}
+
+.color-boton{
+    background: #9f8ad0!important;
+    color: #fff!important;
+}
 
 /*footer*/
 footer{
@@ -332,6 +367,26 @@ footer{
         width: 80%;
         margin-bottom: 40px;
     }
+
+    .contenedor-mapa{
+        width: 100%;
+    }
+
+    .contenedor-mapa iframe{
+        height: 350px;
+    }
+
+    .contenedor-formulario{
+        width: 100%;
+    }
+
+    .espacio-form{
+        padding: 8px;
+    }
+
+    footer{
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -379,5 +434,31 @@ footer{
 
     .checklist-servicio{
         width: 90%;
+    }
+
+    .contenedor-mapa iframe{
+        height: 250px;
+    }
+
+    .espacio-form{
+        padding: 5px;
+    }
+
+    footer{
+        margin-top: 20px;
+    }
+
+    .contenedor{
+        overflow: visible;
+    }
+}
+
+@media screen and (max-width: 300px){
+    footer{
+        margin-top: 40px;
+    }
+
+    .contenedor{
+        overflow: visible;
     }
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/34fc8d25de.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <title>TPO - Desarrollo Web</title>
 </head>
 <body>
@@ -17,9 +18,12 @@
         <img src="img/hamburguesa.svg" alt="" class="hamburguer">
         <nav class="menu-navegacion">
             <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#ubicacion">¿Dónde estamos?</a>
             <a href="#servicio">Nuestro Servicio</a>
             <a href="#producto">Productos</a>
-            <a href="contacto.html">Contacto</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#redes">Redes Sociales</a>
         </nav>
         <div class="contenedor head">
             <h1 class="titulo">Las mejores comidas caseras</h1>
@@ -27,12 +31,19 @@
         </div>
     </header>
     <main>
-        <section class="contenedor">
+        <section class="contenedor" id="nosotros">
             <h2 class="subtitulo">Nosotros</h2>
             <p>Caserito abrió en diciembre de 2012. Fue por pasión que Morgan Chauvel decidió comenzar un giro de 180 grados en su carrera con los principales objetivos: hacer que las recetas de la familia se hicieran conocidas por todos y llevar a que las bebidas producidas por sus abuelos paternos sean saboreadas por todos. Nuestra primer preocupación es la calidad de nuestros productos. Los elaboramos con materia prima local cuidadosamente seleccionada con nuestras recetas. <br>
             Pasaron los años y a las recetas de familia Chauvel se fueron sumando las recetas familiares de nuestros empleados, a los que tambien consideramos parte de la familia Caserito. Por lo que ahora en nuestra carta tenemos recetas de pizzas, tacos, cerveza artesanal, tragos y hasta pastas italianas. <br>
             Por esto, los invitamos a ser parte de esta experiencia gastronómica, a disfrutar de un buen momento en familia, con amigos, en pareja y también solos, ¿por qué no?</p>
             <img src="img/pareja-comiendo2.svg" class="nosotros-img" alt="pareja comiendo">
+        </section>
+        <section class="contenedor" id="ubicacion">
+            <h2 class="subtitulo">¿Donde estamos?</h2>
+            <p>Ubicados en pleno centro de la ciudad de San Miguel de Tucumán, podes pasar visitarnos en el momento en que lo desees y disfrutar de la hermosa vista de nuestra Plaza Independencia.</p>
+            <div class="contenedor-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28482.391393710946!2d-65.236767384375!3d-26.830443100000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c106f2afc99%3A0xe97bef14f2ad881a!2sPlaza%20Independencia!5e0!3m2!1ses!2sar!4v1650931509507!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
         <section class="contenedor" id="servicio">
             <h2 class="subtitulo">Nuestro servicio</h2>
@@ -72,9 +83,37 @@
             <img src="img/close.svg" alt="" class="close">
             <img src="" alt="" class="agregar-imagen">
         </section>
+        <section class="contenedor">
+            <h2 class="subtitulo" id="contacto">Contactanos</h2>
+                <div class="contenedor-formulario">
+                    <div class="container col-12">
+                        <div class="card shadow-sm p-2 mb-2 bg-white rounded">
+                            <form class="espacio-form">
+                                <div class="form-group">
+                                    <label>Nombre y apellido</label>
+                                    <input type="text" class="form-control" id="" placeholder="Juan Perez">
+                                </div>
+                                <div class="form-group">
+                                    <label>Mail</label>
+                                    <input type="email" class="form-control" id="" placeholder="juanperez@gmail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label>Telefono</label>
+                                    <input type="number" class="form-control" id="" placeholder="3815544332">
+                                </div>
+                                <div class="form-group">
+                                    <label>Consulta</label>
+                                    <textarea type="text" class="form-control" id="" placeholder="Ingrese su consulta de al menos 10 caracteres"></textarea>
+                                </div>
+                                <button type="submit" class="btn color-boton">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </section>
     </main>
     <footer>
-        <div class="contenedor footer-content">
+        <div class="contenedor footer-content" id="redes">
             <div class="contact-us">
                 <h2 class="brand">Caserito Bar & Pub</h2>
                 <p>Comparte los mejores momentos</p>
@@ -96,5 +135,8 @@
 
     <script src="js/menu.js"></script>
     <script src="js/lightbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>
