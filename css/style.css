@@ -20,9 +20,18 @@ body{
     padding: 40px 0;
 }
 
-header{
+.header{
     height: 100vh;
     background-image: linear-gradient(to top, rgb(161, 140, 209, 0.4) 0%, rgb(251, 194, 235,0.4) 100%), url(../img/personas-comiendo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.header2{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(106, 17, 203, 0.3) 0%, rgb(37, 117, 252, 0.3) 100%),url(../img/cocineros-cocina.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -233,6 +242,57 @@ header{
     background: #9f8ad0!important;
     color: #fff!important;
 }
+
+/*boton para ver la carta*/
+.contenedor-boton{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.contenedor-boton a{
+    color: #fff;
+    text-decoration: none!important;
+}
+
+.boton {
+    background: linear-gradient(-45deg, #667eea, #683d93, #f43b47, #453a94);
+    background-size: 800% 400%;
+    padding: .5em 1em;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+   }
+   
+   .boton:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+   }
+   
+   .boton:active {
+    animation: gradient 3s infinite;
+    transform: scale(0.8);
+   }
+   
+   @keyframes gradient {
+    0% {
+     background-position: 0% 50%;
+    }
+   
+    50% {
+     background-position: 100% 50%;
+    }
+   
+    100% {
+     background-position: 0% 50%;
+    }
+   }
 
 /*footer*/
 footer{
