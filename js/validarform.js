@@ -49,11 +49,34 @@ function validarGeneral(event) {
     if (campoRequerido(document.getElementById('nombre')) &&
         validarMail(document.getElementById('mail')) &&
         validarTelefono(document.getElementById('telefono')) &&
-        validarConsulta(document.getElementById('consulta')) &&
-        validarCheck()) {
+        validarConsulta(document.getElementById('consulta')) ) {
         enviarEmail();
-        //alert("su consulta se envió correctamente");
+        //alert("Su consulta se envió correctamente");
     } else {
-        alert("ocurrio un error");
+        alert("Ocurrio un error");
     }
+}
+
+function enviarEmail() {
+    let template_params = {
+        from_name: document.getElementById("nombre").value,
+        message_html: `Mensaje: ${document.getElementById('consulta').value} - Email: ${document.getElementById('mail').value} - Telefono: ${document.getElementById('telefono').value}`
+    };
+
+    let service_id = "default_service";
+    let template_id = "template_jrYy64fD";
+    emailjs.send(service_id, template_id, template_params).then(function (response) {
+        //esta funcion se ejecuta cuando el mail se envio correctamente
+        console.log(response);
+        document.getElementById('msjEnvio').className = 'alert alert-info my-4';
+        document.getElementById('msjEnvio').innerText = 'Su consulta fue enviada correctamente.'
+
+        document.getElementById('formConsulta').reset();
+    }, function (error) {
+        //esta funcion se ejecuta cuando falla el envio
+        console.log(error);
+        document.getElementById('msjEnvio').className = 'alert alert-danger my-4';
+        document.getElementById('msjEnvio').innerText = 'Ocurrio un error, intentelo de nuevo en unos minutos.'
+    }
+    )
 }

@@ -11,6 +11,12 @@
     <script src="https://kit.fontawesome.com/34fc8d25de.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_eJQPTvT7CW5IFjRIRpdoL");
+        })();
+    </script>
     <title>TPO - Desarrollo Web</title>
 </head>
 <body>
@@ -122,6 +128,7 @@
                                 </div>
                                 <button type="submit" class="btn color-boton">Enviar</button>
                             </form>
+                            <div class="alert alert-info my-4 d-none" id="msjEnvio" role="alert"></div>
                         </div>
                     </div>
                 </div>
