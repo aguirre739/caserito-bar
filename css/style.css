@@ -59,6 +59,7 @@ body{
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
 .menu-navegacion{
@@ -186,6 +187,7 @@ body{
 
 .show{
     transform: translate(0);
+    z-index: 15;
 }
 
 .agregar-imagen{
@@ -236,6 +238,10 @@ body{
 
 .espacio-form{
     padding: 10px;
+}
+
+.form-space{
+    z-index: 0;
 }
 
 .color-boton{
