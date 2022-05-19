@@ -22,7 +22,7 @@ body{
 
 .header{
     height: 100vh;
-    background-image: linear-gradient(to top, rgb(161, 140, 209, 0.4) 0%, rgb(251, 194, 235,0.4) 100%), url(../img/personas-comiendo.png);
+    background-image: linear-gradient(to top, rgb(161, 140, 209, 0.6) 0%, rgb(251, 194, 235,0.5) 100%), url(../img/personas-comiendo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -31,7 +31,7 @@ body{
 
 .header2{
     height: 100vh;
-    background-image: linear-gradient(to right, rgb(106, 17, 203, 0.3) 0%, rgb(37, 117, 252, 0.3) 100%),url(../img/cocineros-cocina.jpg);
+    background-image: linear-gradient(to right, rgb(161, 140, 209, 0.7) 0%, rgb(251, 194, 235,0.6) 100%),url(../img/cocineros-cocina.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -103,7 +103,7 @@ body{
     text-align: center;
     font-weight: 300!important;
     color: #9f8ad0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 40px!important;
 }
 
@@ -264,6 +264,7 @@ input[type=number] { -moz-appearance:textfield; }
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .contenedor-boton a{
@@ -371,6 +372,13 @@ footer{
     height: 2px;
     background: #fff;
     margin-bottom: 60px;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding-top: 5px;
 }
 
 /* MEDIA QUERIES */
