@@ -1,5 +1,5 @@
 function campoRequerido(input) {
-    if (input.value == "") {
+    if (input.value == "" || !isNaN(input.value)) {
         //si esta vacio
         input.className = "form-control is-invalid";
         return false;

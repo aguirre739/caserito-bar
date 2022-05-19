@@ -79,6 +79,10 @@ body{
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
+.menu-navegacion a:hover{
+    color: #fff;
+}
+
 .spread{
     transform: translate(0);
 }
@@ -103,7 +107,7 @@ body{
     text-align: center;
     font-weight: 300!important;
     color: #9f8ad0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: 40px!important;
 }
 
@@ -288,6 +292,7 @@ input[type=number] { -moz-appearance:textfield; }
    .boton:hover {
     animation: gradient 3s infinite;
     transform: scale(1.05);
+    color: #fff;
    }
    
    .boton:active {
@@ -447,7 +452,7 @@ footer{
     .contact-us{
         text-align: center;
         width: 80%;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .contenedor-mapa{
@@ -468,6 +473,7 @@ footer{
 
     footer{
         margin-top: 10px;
+        padding-bottom: 25px;
     }
 }
 
@@ -528,19 +534,31 @@ footer{
 
     footer{
         margin-top: 20px;
+        padding-bottom: 20px;
     }
 
     .contenedor{
         overflow: visible;
     }
+
+    .brand{
+        font-size: 35px;
+    }
+    
 }
 
 @media screen and (max-width: 300px){
     footer{
         margin-top: 40px;
+        padding-bottom: 10px;
     }
 
     .contenedor{
         overflow: visible;
     }
+
+    .brand{
+        font-size: 30px;
+    }
+
 }
