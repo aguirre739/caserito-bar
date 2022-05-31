@@ -22,7 +22,7 @@ body{
 
 .header{
     height: 100vh;
-    background-image: linear-gradient(to top, rgb(161, 140, 209, 0.6) 0%, rgb(251, 194, 235,0.5) 100%), url(../img/personas-comiendo.png);
+    background-image: linear-gradient(to top, rgb(161, 140, 209, 0.6) 0%, rgb(251, 194, 235,0.5) 100%), url(../img/personas-comiendo.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
